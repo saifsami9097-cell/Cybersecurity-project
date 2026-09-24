@@ -116,7 +116,31 @@ Wireshark captured an ICMP Echo Request from the Kali Linux VM to 192.168.52.2, 
 
 The ICMP traffic analysis demonstrated successful request-and-reply communication between the Kali Linux VM and the destination. Wireshark helped identify ICMP packet types, source and destination IP addresses, and packet sizes.
 
+HTTP Traffic Analysis
 
+Objective: To capture and analyze HTTP traffic using Wireshark.
 
+Tool Used: Wireshark
+Network Interface: eth0
+Test Activity: Generated HTTP traffic using `curl http://neverssl.com`.
 
+ Packet Details
 
+| Parameter          | Observed Value |
+| ------------------ | -------------- |
+| Frame Number       | 68             |
+| Protocol           | HTTP over TCP  |
+| Source IP          | 34.223.124.45  |
+| Destination IP     | 192.168.52.128 |
+| Source Port        | 80             |
+| Destination Port   | 36820          |
+| TCP Payload Length | 1661 bytes     |
+| Content Type       | text/html      |
+
+Observation
+
+Wireshark captured HTTP traffic from the remote web server to the Kali Linux VM. The packet contained reassembled TCP data, including 131 lines of HTML content from the NeverSSL webpage. The captured content was readable, demonstrating that plain HTTP does not encrypt webpage data.
+
+Conclusion
+
+The HTTP traffic analysis demonstrated how Wireshark can capture and inspect web communication. The practical helped identify IP addresses, TCP ports, and readable HTML content transmitted over HTTP.
