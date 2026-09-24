@@ -43,3 +43,23 @@ During the DNS capture, Wireshark successfully captured DNS query and response p
 
 This activity was performed to understand DNS traffic analysis using Wireshark. The final result is based on the packets observed during the lab exercise.
 
+TCP Traffic Analysis
+
+Test Activity: Generated HTTP traffic using curl http://example.com.
+
+| Handshake Packet | Source IP      | Destination IP |
+| ---------------- | -------------- | -------------- |
+| SYN              | 192.168.52.128 | 104.20.23.154  |
+| SYN, ACK         | 104.20.23.154  | 192.168.52.128 |
+| ACK              | 192.168.52.128 | 104.20.23.154  |
+
+Observation
+
+Wireshark captured TCP handshake packets generated during the HTTP request. The SYN packet was sent from the Kali Linux VM to the remote server. The server replied with a SYN-ACK packet, and Kali sent an ACK packet to complete the handshake.
+
+Conclusion
+
+The TCP 3-way handshake was successfully observed using Wireshark. This practical demonstrated how TCP establishes a connection before data transmission and helped identify the source and destination IP addresses involved in the communication.
+
+
+
