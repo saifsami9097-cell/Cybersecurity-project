@@ -89,6 +89,34 @@ Conclusion
 
 The UDP packet analysis demonstrated how DNS queries can be transmitted using UDP. Wireshark helped identify packet-level details, including IP addresses, port numbers, and frame size. This exercise improved practical understanding of UDP communication and network traffic analysis.
 
+ICMP Traffic Analysis
+
+Objective: To analyze ICMP packets and observe network connectivity using Wireshark.
+
+Tool Used: Wireshark
+Network Interface: eth0
+Test Activity: Ping test to 192.168.52.2 using Kali Linux.
+
+ Packet Details
+
+| Parameter      | Echo Request     | Echo Reply     |
+| -------------- | ---------------- | -------------- |
+| Frame Number   | 12               | 13             |
+| Source IP      | 192.168.52.128   | 192.168.52.2   |
+| Destination IP | 192.168.52.2     | 192.168.52.128 |
+| Packet Size    | 98 bytes         | 98 bytes       |
+| ICMP Type      | 8 (Echo Request) | 0 (Echo Reply) |
+| ICMP Code      | 0                | 0              |
+
+ Observation
+
+Wireshark captured an ICMP Echo Request from the Kali Linux VM to 192.168.52.2, followed by an ICMP Echo Reply from the destination. Both packets were 98 bytes in size. The reply indicates that the destination responded to the ping request.
+
+ Conclusion
+
+The ICMP traffic analysis demonstrated successful request-and-reply communication between the Kali Linux VM and the destination. Wireshark helped identify ICMP packet types, source and destination IP addresses, and packet sizes.
+
+
 
 
 
