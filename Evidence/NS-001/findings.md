@@ -61,5 +61,34 @@ Conclusion
 
 The TCP 3-way handshake was successfully observed using Wireshark. This practical demonstrated how TCP establishes a connection before data transmission and helped identify the source and destination IP addresses involved in the communication.
 
+UDP Packet Analysis
+
+Objective: To capture and analyze UDP packets using Wireshark and identify their source and destination IP addresses and port numbers.
+
+Tool Used: Wireshark
+Network Interface: eth0
+Test Activity: DNS lookup using `nslookup example.com`
+
+Packet Details
+
+| Parameter              | Observed Value |
+| ---------------------- | -------------- |
+| Frame Number           | 26             |
+| Protocol               | UDP            |
+| Source IP Address      | 192.168.52.128 |
+| Destination IP Address | 192.168.52.2   |
+| Source Port            | 55663          |
+| Destination Port       | 53             |
+| Packet Size            | 71 bytes       |
+
+Observation
+
+Wireshark captured a 71-byte UDP packet on the eth0 interface. The packet was transmitted from the Kali Linux VM (192.168.52.128) to the DNS server (192.168.52.2). The source port was 55663, while the destination port was 53, which is commonly used for DNS communication.
+
+Conclusion
+
+The UDP packet analysis demonstrated how DNS queries can be transmitted using UDP. Wireshark helped identify packet-level details, including IP addresses, port numbers, and frame size. This exercise improved practical understanding of UDP communication and network traffic analysis.
+
+
 
 
