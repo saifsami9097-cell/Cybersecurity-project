@@ -21,21 +21,25 @@ To capture and analyze DNS traffic using Wireshark and understand how DNS querie
 5. Checked the captured packets for DNS queries and responses.
 
 4. Display Filter Used
+
 dns
 Additional filter:
 udp.port == 53
 
-5. Findings
-DNS query generated:Yes 
-DNS packets displayed: Yes 
-Source IP: 192.168.52.128
-Destination IP: 192.168.52.2
-Domain queried: example.com
-DNS response:Observed
-6. Observation
+6. Findings
+
+DNS query generated:Yes ;
+DNS packets displayed: Yes ; 
+Source IP: 192.168.52.128 ;
+Destination IP: 192.168.52.2 ;
+Domain queried: example.com ;
+DNS response:Observed ;
+
+8. Observation
+
 During the DNS capture, Wireshark successfully captured DNS query and response packets between the Kali Linux VM (192.168.52.128) and the DNS server (192.168.52.2). The DNS query was generated using `nslookup example.com`, and the corresponding DNS response was observed. Initially, DNS communication timed out, but the lookup eventually returned IP addresses for example.com.
 
-7. Conclusion
+9. Conclusion
 
 This activity was performed to understand DNS traffic analysis using Wireshark. The final result is based on the packets observed during the lab exercise.
 
