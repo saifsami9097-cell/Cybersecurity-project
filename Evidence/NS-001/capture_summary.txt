@@ -1,1 +1,45 @@
+PROJECT ID: NS-001
+PROJECT NAME: Network Traffic Analysis Using Wireshark
+
+TOOL: Wireshark
+OPERATING SYSTEM: Kali Linux
+NETWORK INTERFACE: eth0
+
+PRACTICALS COMPLETED:
+
+1. DNS Traffic Analysis
+
+   * Captured DNS query and response packets.
+   * Identified source and destination IP addresses.
+
+2. TCP Traffic Analysis
+
+   * Observed TCP 3-way handshake (SYN, SYN-ACK, ACK).
+   * Identified communicating IP addresses.
+
+3. UDP Packet Analysis
+
+   * Captured UDP traffic associated with DNS.
+   * Identified source port 55663 and destination port 53.
+
+4. ICMP Traffic Analysis
+
+   * Captured ICMP Echo Request and Echo Reply.
+   * Observed communication between Kali Linux and the DNS server.
+
+5. HTTP Traffic Analysis
+
+   * Captured HTTP traffic from NeverSSL.
+   * Observed readable HTML content in packet data.
+
+SCREENSHOTS:
+
+* NS-001_DNS_Traffic.png
+* NS-001_TCP_Handshake.png
+* NS-001_UDP_Traffic.png
+* NS-001_ICMP_Traffic.png
+* NS-001_HTTP_Traffic.png
+
+NOTE:
+Findings are based on the packets observed during the lab exercises.
 
