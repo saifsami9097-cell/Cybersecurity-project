@@ -74,3 +74,57 @@ recommendations are documented in:
 Evidence:
 
 `Evidence/NS-002/`
+
+## NS-002 – Vulnerability Assessment Using Nessus
+
+### Objective
+Performed a vulnerability assessment of an intentionally vulnerable
+Metasploitable virtual machine using Nessus Essentials and Nmap.
+
+### Lab Environment
+
+| Component | Details |
+|---|---|
+| Scanner | Kali Linux |
+| Scanner IP | 192.168.52.128 |
+| Target | Metasploitable |
+| Target IP | 192.168.52.129 |
+| Scanner | Nessus Essentials |
+| Discovery Tool | Nmap |
+| Virtualization | VMware |
+
+### Assessment Activities
+
+- Discovered target services using Nmap
+- Configured a Nessus vulnerability scan
+- Performed vulnerability assessment
+- Analyzed severity and CVE information
+- Reviewed affected services and ports
+- Documented Nessus evidence
+- Prepared remediation recommendations
+- Planned post-remediation validation
+
+### Key Findings
+
+The assessment identified vulnerabilities involving:
+
+- End-of-life operating system
+- DNS/BIND
+- SMB/Samba
+- NFS
+- rsh
+- SMTP
+- PostgreSQL
+- SSL/TLS configuration
+- HTTP configuration
+
+### Documentation
+
+- [NS-002 Vulnerability Assessment Report](Documentation/NS-002_Vulnerability_Assessment_Report.md)
+- [Nessus Scan Evidence](Evidence/NS-002/NS-002-Nessus-Scan-Completed.pdf)
+
+### Skills Demonstrated
+
+`Nessus` `Nmap` `Vulnerability Assessment` `CVE Analysis`
+`Risk Analysis` `Network Security` `Linux` `Remediation`
+`Security Reporting`
