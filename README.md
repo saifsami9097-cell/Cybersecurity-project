@@ -47,3 +47,30 @@ The project included:
 ### Key Learning
 
 This project provided practical experience in packet capture, protocol analysis, network monitoring, and basic network-security assessment using Wireshark.
+
+
+## NS-002 – Nessus Vulnerability Assessment
+
+**Target:** Metasploitable (`192.168.52.129`)  
+**Scanner:** Kali Linux + Nessus Essentials  
+**Scan Policy:** Basic Network Scan
+
+### Assessment Results
+
+The Nessus assessment identified multiple vulnerabilities in the
+intentionally vulnerable Metasploitable system.
+
+| ID | Finding | Severity | CVSS | CVE |
+|------|---|---|---:|---|
+| VUL-001 | Canonical Ubuntu Linux 8.04.x End of Life | Critical | 10.0 | N/A |
+
+### Evidence
+
+Detailed findings, verification results, screenshots, and remediation
+recommendations are documented in:
+
+`Documentation/NS-002_Vulnerability_Assessment_Report.md`
+
+Evidence:
+
+`Evidence/NS-002/`
